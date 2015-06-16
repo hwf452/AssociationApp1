@@ -1,0 +1,277 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    style="@style/AllBackgroundstyle">
+
+    <RelativeLayout
+        android:id="@+id/relativeLayout1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        style="@style/TopBackgroundTitleBarstyle">
+
+        <TextView
+            android:id="@+id/textView1"
+            style="@style/TopTitleTextViewStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/text_btn_set" />
+
+      
+    </RelativeLayout>
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_below="@+id/relativeLayout1" >
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content" >
+
+            <LinearLayout
+                android:id="@+id/iconBox"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:paddingBottom="5dp" >
+                
+                
+                </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/layout4"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/iconBox"
+                android:layout_marginLeft="10.0dip"
+                android:layout_marginRight="10.0dip"
+                android:background="@drawable/line51"
+                android:gravity="center"
+                android:orientation="horizontal"
+                android:paddingRight="10.0dip" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginBottom="4.0dip"
+                    android:layout_marginRight="8.0dip"
+                    android:textColor="#000000"
+                    android:paddingLeft="17.0dip"
+                    android:text="更多功能"
+                    android:textSize="15.0dip" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/layout5"
+                android:layout_below="@+id/layout4"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:visibility="gone"
+                style="@style/tab5_line2_style"
+                >
+
+                <LinearLayout
+                    android:id="@+id/weibo"
+                    style="@style/tab5_line3_style">
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/weibo_set" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:paddingTop="5.0dip"
+                        android:text="微博设置"
+                        android:textColor="@color/black"
+                        android:textSize="12.0sp" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/reaction_layout"
+                    style="@style/tab5_line3_style">
+
+                    <FrameLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" >
+
+                        <ImageView
+                            android:id="@+id/image"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:src="@drawable/reaction_online" />
+
+                        <ImageView
+                            android:id="@+id/msg_red_point"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="right"
+                            android:visibility="gone"
+                            android:src="@drawable/msg_count_bg" />
+                    </FrameLayout>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:paddingTop="5.0dip"
+                        android:text="留言反馈"
+                        android:textColor="@color/black"
+                        android:textSize="12.0sp" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/recom_soft_new"
+                    style="@style/tab5_line3_style">
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/recom_soft" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:paddingTop="5.0dip"
+                        android:text="应用推荐"
+                        android:textColor="@color/black"
+                        android:textSize="12.0sp" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/share_to_friend"
+                    style="@style/tab5_line3_style">
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/icon_share_to_friend" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:paddingTop="5.0dip"
+                        android:text="分享给朋友"
+                        android:textColor="@color/black"
+                        android:textSize="12.0sp" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/layout6"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/layout4"
+               	style="@style/tab5_line2_style">
+                
+                <LinearLayout
+                    android:id="@+id/aboutme"
+                   style="@style/tab5_line3_style" >
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/tab5_btn24_1_selector" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:paddingTop="5.0dip"
+                        android:text="@string/tv_aboutme"
+                        android:textColor="@color/black"
+                        android:textSize="12.0sp" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/promote_online_update"
+                   style="@style/tab5_line3_style" >
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/tab5_btn24_5_selector" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:paddingTop="5.0dip"
+                        android:text="检查更新"
+                        android:textColor="@color/black"
+                        android:textSize="12.0sp" />
+                </LinearLayout>
+                
+                <LinearLayout
+                    android:id="@+id/twoWeiCode"
+                   style="@style/tab5_line3_style" >
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/tab5_btn24_4_selector" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:paddingTop="5.0dip"
+                        android:text="@string/tv_tab5_member_rights"
+                        android:textColor="@color/black"
+                        android:textSize="12.0sp" />
+                </LinearLayout>
+
+                
+
+                <LinearLayout
+                    android:id="@+id/grade_online"
+                    style="@style/tab5_line3_style"
+                    >
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/tab5_btn24_6_selector" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:paddingTop="5.0dip"
+                        android:text="@string/grade_online"
+                        android:textColor="@color/black"
+                        android:textSize="12.0sp" />
+                </LinearLayout>
+            </LinearLayout>
+            <LinearLayout
+                android:id="@+id/layout7"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/layout6"
+               	style="@style/tab5_line2_style">
+                
+                <LinearLayout
+                    android:id="@+id/curAddress"
+                    android:layout_marginLeft="15dp"
+                   style="@style/tab5_line3_style1" >
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/tab5_btn24_3_selector" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:paddingTop="5.0dip"
+                        android:text="当前位置"
+                        android:textColor="@color/black"
+                        android:textSize="12.0sp" />
+                </LinearLayout>
+
+                
+            </LinearLayout>
+            
+
+            
+        </RelativeLayout>
+    </ScrollView>
+    
+   </RelativeLayout>

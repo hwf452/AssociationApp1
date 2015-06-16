@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    style="@style/AllBackgroundstyle"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:id="@+id/relativeLayout1"
+        style="@style/TopBackgroundTitleBarstyle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+        <TextView
+            android:id="@+id/tv_titlebar4"
+            style="@style/TopTitleTextViewStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/tv_activeDetail_tab3" />
+
+        <Button
+            android:id="@+id/apply"
+            style="@style/TopTitleButton7Style"
+            android:textSize="18sp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="8dp"
+            android:text="@string/apply"
+            android:background="@null" />
+
+        <Button
+            android:id="@+id/back"
+            style="@style/TopTitleBackStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </RelativeLayout>
+    <ListView 
+        android:id="@+id/activeInfoListView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:divider="@drawable/line150"
+        android:cacheColorHint="#00000000"
+        android:fadingEdge="none"
+        android:scrollbars="@null"
+        
+        android:listSelector="@android:color/transparent"
+        >
+        
+    </ListView>
+
+</LinearLayout>

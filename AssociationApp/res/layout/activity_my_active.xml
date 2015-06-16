@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/hot_bg" >
+
+    <RelativeLayout
+        android:id="@+id/relativeLayout1"
+        style="@style/TopBackgroundTitleBarstyle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+        <Button
+            android:id="@+id/button1"
+            style="@style/TopTitleBackStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            />
+
+        <TextView
+            android:id="@+id/textView1"
+            style="@style/TopTitleTextViewStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:text="@string/my_at_center" />
+    </RelativeLayout>
+
+    <ListView
+            android:id="@+id/pull_listview"
+            
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_below="@+id/relativeLayout1"
+            android:cacheColorHint="#00000000"
+            android:descendantFocusability="blocksDescendants"
+            android:divider="@drawable/line5"
+            android:fadingEdge="none"
+            android:gravity="center_horizontal"
+            android:scrollbars="none" />
+
+</RelativeLayout>

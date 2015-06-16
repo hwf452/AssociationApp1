@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/list_item_selector"
+    android:orientation="vertical" >
+
+    <TextView
+        style="@style/ActiveLittleTitleTextViewStyle"
+        android:text="@string/active_detail" />
+
+    <RelativeLayout style="@style/ActiveHintRelativeLayoutStyle" >
+
+        <TextView
+            android:id="@+id/textView1"
+            style="@style/ActiveHintTextViewStyle1"
+            android:text="@string/active_detail_date" />
+
+        <TextView
+            android:id="@+id/detailDateTextView"
+            style="@style/ActiveHintTextViewStyle1"
+            android:layout_toRightOf="@id/textView1"
+            android:text="2014年3月1日 上午1:00-2:00" />
+    </RelativeLayout>
+
+    <RelativeLayout style="@style/ActiveHintRelativeLayoutStyle" >
+
+        <TextView
+            android:id="@+id/textView2"
+            style="@style/ActiveHintTextViewStyle1"
+            android:text="@string/active_detail_address" />
+
+        <Button
+            android:id="@+id/detailAddressButton"
+            style="@style/ActiveHintButton"
+            android:layout_alignParentRight="true"
+            android:background="@drawable/btn18_btn_selector" />
+
+        <TextView
+            android:id="@+id/detailAddressTextView"
+            style="@style/ActiveHintTextViewStyle2"
+            android:layout_toLeftOf="@id/detailAddressButton"
+            android:layout_toRightOf="@id/textView2"
+            android:text="广东省珠海市香洲区建民路147号" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/list158"
+        android:orientation="vertical"
+        android:paddingLeft="@dimen/active_hint_padding"
+        android:paddingRight="@dimen/active_hint_padding" >
+
+        <TextView
+            android:id="@+id/textView3"
+            style="@style/ActiveHintTextViewStyle1"
+            android:layout_marginBottom="@dimen/active_hint_padding"
+            android:layout_marginTop="@dimen/active_hint_padding"
+            android:text="@string/active_detail_info" />
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:contentDescription="@null"
+            android:src="@drawable/head157" />
+
+        <TextView
+            android:id="@+id/detailInfoTextView"
+            style="@style/ActiveWriteTextViewStyle"
+            android:layout_marginBottom="@dimen/active_hint_padding"
+            android:layout_marginTop="@dimen/active_hint_padding"
+            android:text="\t珠海关爱协会开展关爱异地务工人员志愿服务于活动。珠海关爱协会开展关爱异地务工人员志愿服务于活动。" />
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:paddingRight="10dp" >
+
+        <TextView
+            android:id="@+id/shareClickTextView"
+            style="@style/ActiveClickableTextViewStyle"
+            android:layout_alignParentRight="true"
+            
+            
+            android:background="@android:color/transparent"
+            android:drawableLeft="@drawable/btn169_btn_selector"
+            android:text="@string/share" />
+
+        <TextView
+            android:id="@+id/collectClickTextView"
+            style="@style/ActiveClickableTextViewStyle"
+            android:layout_toLeftOf="@id/shareClickTextView"
+            android:background="@android:color/transparent"
+            android:drawableLeft="@drawable/btn156_btn1_selector"
+            android:text="@string/collect" />
+
+        <TextView
+            android:id="@+id/praiseClickTextView"
+            style="@style/ActiveClickableTextViewStyle"
+            android:layout_marginRight="5dp"
+            android:layout_toLeftOf="@id/collectClickTextView"
+            android:background="@android:color/transparent"
+            android:drawableLeft="@drawable/btn170_btn_selector"
+            android:text="@string/praise1" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/active_little_title_tv_height"
+        android:background="@drawable/list157" >
+
+        <TextView
+            style="@style/ActiveLittleTitleTextViewStyle"
+            android:layout_centerVertical="true"
+            android:background="@null"
+            android:text="@string/livesite" />
+        
+        <TextView
+            android:id="@+id/talkClickTextView"
+            style="@style/ActiveClickableTextViewStyle"
+            android:layout_marginRight="5dp"
+            android:layout_alignParentRight="true"
+            android:onClick="true"
+            android:clickable="true"
+            android:background="@android:color/transparent"
+            android:drawableLeft="@drawable/btn171_btn_selector"
+            android:text="@string/i_will_play" />
+    </RelativeLayout>
+
+</LinearLayout>

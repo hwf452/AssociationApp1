@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/ad_image"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:id="@+id/linear_main"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content" >
+
+        <FrameLayout
+            android:id="@+id/fl_main"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" >
+
+            <com.halong.associationapp.tab1.ChildViewPager
+                android:id="@+id/Ad_pager"
+                android:layout_width="fill_parent"
+                android:layout_height="180dip"
+                android:background="@drawable/viewpager_cat" />
+
+            <LinearLayout
+                android:id="@+id/ll_point"
+                android:orientation="horizontal"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="bottom|center_horizontal"
+                android:layout_marginBottom="10dp"
+                android:src="@drawable/indicator" />
+        </FrameLayout>
+    </LinearLayout>
+
+</LinearLayout>

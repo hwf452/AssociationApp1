@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="quanzi_radiobutton_selector">#708090</color>
+    <color name="quanzi_items_comment_color">#F7F7F7</color>
+    <color name="quanzi_items_news">#FF0000</color>
+    <color name="quanzi_items_background">#ececff</color>
+</resources>

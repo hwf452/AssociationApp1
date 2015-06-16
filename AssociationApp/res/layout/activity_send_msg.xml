@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/hot_bg" >
+
+    <RelativeLayout
+        android:id="@+id/relativeLayout1"
+        style="@style/TopBackgroundTitleBarstyle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+        <Button
+            android:id="@+id/button1"
+            style="@style/TopTitleBackStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:id="@+id/textView1"
+            style="@style/TopTitleTextViewStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:text="@string/tv_tab4_send_message" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/relativeLayout2"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/relativeLayout1" >
+        
+        <RelativeLayout
+            android:id="@+id/relativeLayout3"
+            android:layout_width="match_parent"
+            android:layout_height="43.9dp"
+            
+            android:layout_alignParentBottom="true"
+            android:background="@drawable/reply_background" >
+
+            <Button
+                android:id="@+id/button2"
+                android:layout_width="33.9dp"
+                android:layout_height="33.9dp"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="3dp"
+                android:background="@drawable/btn43_btn_selector"
+                />
+
+            <EditText
+                android:id="@+id/editText1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@null"
+                android:hint="@string/tv_tab4_return"
+                android:textSize="16sp"
+                android:singleLine="true"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="3dp"
+                android:layout_marginRight="9dp"
+                android:layout_toLeftOf="@+id/button2"
+                />
+
+
+        </RelativeLayout>
+
+        
+
+        <com.halong.associationapp.tab1.PullToRefreshView
+            android:id="@+id/PullToRefreshView"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_above="@+id/relativeLayout3"
+            android:orientation="vertical" >
+            <ListView
+            android:id="@+id/pull_listview"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:cacheColorHint="#00000000"
+            android:descendantFocusability="blocksDescendants"
+            android:divider="@null"
+            android:fadingEdge="none"
+            android:gravity="center_horizontal"
+            android:scrollbars="none" />
+
+        </com.halong.associationapp.tab1.PullToRefreshView>
+
+        
+        
+    </RelativeLayout>
+
+</RelativeLayout>

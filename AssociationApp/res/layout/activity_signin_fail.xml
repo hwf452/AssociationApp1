@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/Member_root"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content" >
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/card_bg2" >
+
+        <TextView
+            android:id="@+id/textView1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_marginLeft="40dp"
+            android:layout_marginRight="40dp"
+            android:layout_marginTop="60dp"
+            android:text="您已签到成功,或是你扫描的二维码有误."
+            android:textColor="#000000"
+            android:textSize="18sp" />
+
+        <Button
+            android:id="@+id/contact_card_bottom_layout"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/textView1"
+            android:layout_marginLeft="20.0dip"
+            android:layout_marginRight="20.0dip"
+            android:layout_marginTop="50.0dip"
+            android:background="@drawable/btn08_scan_btn_selector"
+            android:gravity="center"
+            android:onClick="backButton"
+            android:text="@string/tv_btn_ok3"
+            android:textColor="@android:color/white"
+            android:textSize="20.0sp" />
+    </RelativeLayout>
+
+    <ImageView
+        android:id="@+id/contact_card_close"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="right"
+        android:onClick="backButton"
+        android:src="@drawable/btn09_btn05_selector" />
+
+</FrameLayout>

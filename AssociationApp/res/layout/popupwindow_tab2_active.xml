@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/RelateActive"
+    android:layout_width="200dp"
+    android:layout_height="wrap_content"
+    
+    android:orientation="vertical" >
+
+   
+
+        <Button
+            android:id="@+id/btn1"
+            android:text="@string/tv_tab2_pop_tv1"
+            
+            style="@style/active_tv_titlebar1_style"
+            
+             />
+
+        <Button
+            android:id="@+id/btn2"
+           
+            android:text="@string/tv_tab2_pop_tv2"
+            style="@style/active_tv_titlebar1_style"
+             />
+        <Button
+            android:id="@+id/btn3"
+           
+            android:text="@string/tv_tab2_pop_tv3"
+            style="@style/active_tv_titlebar1_style"
+             />
+        <Button
+            android:id="@+id/btn4"
+           
+            android:text="@string/tv_tab2_pop_tv6"
+            style="@style/active_tv_titlebar1_style"
+             />
+        <Button
+            android:id="@+id/btn5"
+           
+            android:text="@string/tv_tab2_pop_tv5"
+            style="@style/active_tv_titlebar1_style"
+             />
+        
+
+</LinearLayout>

@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="quanzi_list_little">12sp</dimen>
+     <dimen name="quanzi_list_default">13sp</dimen>
+     <dimen name="padding1">5dp</dimen>
+</resources>

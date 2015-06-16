@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="dolive_share">分享到:</string>
+    <string name="dolive_headline">标题:</string>
+    <string name="dolive_content">内容:</string>
+    <string name="dolive">直播</string>
+    <string name="choice">选择</string>
+    <string name="dolive_date">2014年3月12日 10:00:00&#8211;11:00:00</string>
+    <string name="dolive_site_name">为马航事件祈福活动</string>
+    <string name="dolive_site_date">1小时前</string>
+    <string name="dolive_site_from">来自</string>
+    <string name="dolive_site_address">珠海夏朗科技有限公司</string>
+    <string name="dolive_site_comment">评论</string>
+    <string name="praise">20</string>
+    <string name="livename">我是XX</string>
+    <string name="dolive_say">好想说点什么...</string>
+    <string name="dolive_numberpraise">32人觉得赞</string>
+    <string name="dolive_comment">:啊啊</string>
+    <string name="review">回复</string>
+    <string name="dolive_site_content">32人觉得赞32人觉得赞32人觉得赞32人觉得赞32人觉得赞32人觉得赞32人觉得赞32人觉得赞32人觉得赞32人觉得赞</string>
+	<string name="login_about_info">夏浪科技(http://www.halong-tech.com/)是国内领先的移动互联网应用整体解决方案服务提供商。核心团队自2010年以来一直致力于移动互联网的应用技术服务，公司总部设立于珠海，公司拥有国内一流的开发团队和实时跟进国际最前沿的移动应用开发技术</string>
+
+	<string name="share">分享</string>
+	<string name="praise1">点赞</string>
+	<string name="collect">收藏</string>
+	<string name="apply">报名</string>
+	
+	<string name="active_will_begin">即将开展</string>
+	<string name="active_info">活动详情</string>
+	<string name="active_will_begin_name">活动名称：</string>
+	<string name="active_will_begin_phone">联系电话：</string>
+	<string name="active_will_begin_address">集合地址：</string>
+	<string name="active_will_begin_gather">集合时间：</string>
+	<string name="active_will_begin_end">截止时间：</string>
+	<string name="active_detail">活动详情</string>
+	<string name="active_detail_date">活动时间：</string>
+	<string name="active_detail_address">活动地点：</string>
+	<string name="active_detail_info">活动简介：</string>
+	
+	<string name="livesite">直播现场</string>
+	<string name="i_will_play">我要播</string>
+</resources>

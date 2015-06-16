@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<resources xmlns:android="http://schemas.android.com/apk/res/android">
+ 
+    <style name="DoliveLayoutStyle">
+        <item name="android:paddingLeft">10dp</item>
+        <item name="android:paddingRight">10dp</item>
+        <item name="android:paddingTop">15dp</item>
+        <item name="android:textColor">@color/gray</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+
+    <style name="DoliveTitleTextViewStyle">
+        <item name="android:textSize">18.0sp</item>
+        <item name="android:textColor">@color/black</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+
+    <style name="DoliveInfoTextViewStyle">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textSize">18.0sp</item>
+        <item name="android:textColor">@color/light_black</item>
+    </style>
+
+    <style name="DoliveImageButtonStyle">
+        <item name="android:layout_width">67.2dp</item>
+        <item name="android:layout_height">52.5dp</item>
+        <item name="android:background">@null</item>
+        <item name="android:layout_marginRight">6dp</item>
+        <item name="android:layout_centerVertical">true</item>
+        
+        <item name="android:src">@drawable/btn015_2_btn_selector</item>
+    </style>
+
+    <style name="DoliveButtonStyle">
+        <item name="android:background">@drawable/btn08_selector</item>
+        <item name="android:textColor">@color/white1</item>
+        <item name="android:textSize">18.0sp</item>
+        <item name="android:gravity">center</item>
+    </style>
+
+    <style name="DoliveLittleTextViewStyle">
+        <item name="android:textColor">@color/gray</item>
+        <item name="android:textSize">@dimen/tab2_livesite_tv_little_size</item>
+    </style>
+
+    <style name="DoliveNameTextViewStyle">
+        <item name="android:textColor">@color/royalblue</item>
+        <item name="android:textSize">@dimen/tab2_livesite_tv_little_size</item>
+    </style>
+
+    <style name="ActiveLittleTitleTextViewStyle">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">@dimen/active_little_title_tv_height</item>
+        <item name="android:textColor">@color/black</item>
+        <item name="android:gravity">center_vertical</item>
+        <item name="android:paddingLeft">@dimen/active_little_title_padding</item>
+        <item name="android:background">@drawable/list157</item>
+        <item name="android:textSize">@dimen/active_little_title_tv_size</item>
+    </style>
+
+    <style name="ActiveHintRelativeLayoutStyle">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:paddingLeft">@dimen/active_hint_padding</item>
+        <item name="android:paddingRight">@dimen/active_hint_padding</item>
+        <item name="android:background">@drawable/list158</item>
+    </style>
+
+    <style name="ActiveHintTextViewStyle1">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textColor">@color/black</item>
+        <item name="android:gravity">center_vertical</item>
+        <item name="android:singleLine">true</item>
+        <item name="android:layout_centerVertical">true</item>
+        <item name="android:paddingLeft">@dimen/active_hint_padding</item>
+        <item name="android:textSize">@dimen/active_hint_info_tv_size</item>
+    </style>
+
+    <style name="ActiveHintTextViewStyle2">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textColor">@color/royalblue</item>
+        <item name="android:gravity">center_vertical</item>
+        <item name="android:singleLine">true</item>
+        <item name="android:layout_centerVertical">true</item>
+        <item name="android:paddingLeft">@dimen/active_hint_padding</item>
+        <item name="android:textSize">@dimen/active_hint_info_tv_size</item>
+    </style>
+    
+    <style name="ActiveHintButton">
+        <item name="android:layout_width">30dp</item>
+        <item name="android:layout_height">30dp</item>
+        <item name="android:layout_centerVertical">true</item>
+    </style>
+
+    <style name="ActiveWriteTextViewStyle">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textColor">@color/black</item>
+        <item name="android:textSize">@dimen/active_write_info_tv_size</item>
+    </style>
+    
+     <style name="ActiveClickableTextViewStyle">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:textColor">@color/royalblue</item>
+        <item name="android:textSize">@dimen/active_click_tv_size</item>
+        <item name="android:gravity">center_vertical</item>
+        <item name="android:clickable">true</item>
+    </style>
+
+</resources>

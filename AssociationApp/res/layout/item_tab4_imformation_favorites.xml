@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="72dp"
+    android:minHeight="72dp"
+    android:background="@drawable/list_item_selector1"
+     >
+
+    
+        
+
+        <ImageView
+            android:id="@+id/list_item_head_image"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="9dp"
+            android:layout_centerVertical="true"
+            android:src="@drawable/button23_tab4" />
+        
+        <RelativeLayout
+        android:id="@+id/relate22"
+        android:layout_width="20dp"
+        android:layout_height="fill_parent"
+        android:layout_alignParentRight="true" />
+   
+
+    <TextView
+        android:id="@+id/user_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:layout_marginLeft="6dip"
+        android:layout_marginRight="5.0dip"
+        android:layout_toLeftOf="@+id/relate22"
+        android:layout_toRightOf="@id/list_item_head_image"
+        android:singleLine="true"
+        android:text="协会出台《珠海市信息技术公共服务平台 责任制管理办法》 "
+        android:textColor="#454545"
+        android:textSize="16sp" />
+
+    <TextView
+        android:id="@+id/user_company"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@id/user_name"
+        android:layout_alignWithParentIfMissing="true"
+        android:layout_below="@id/user_name"
+        android:layout_marginTop="6dp"
+        android:layout_toLeftOf="@+id/relate22"
+        android:singleLine="true"
+        android:text="为落实市科技工贸和信息化局对我市信息技术公共服务平台优化服务内容，促进业务发展的总体要求，加强和规范协会对珠海南方软件网络评测中心、珠海南方集成电路设计服务中心、珠海南方数字娱乐公共服务中心三个公共技术服务平台的运营管理，经过多方讨论并征求意见，协会制定并出台了《珠海市信息技术公共服务平台责任制管理办法》（以下简称“《办法》”）。《办法》将于2014年1月1日起执行。"
+        android:textColor="#565656"
+        android:textSize="14sp" />
+
+</RelativeLayout>

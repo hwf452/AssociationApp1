@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/whitesmoke"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:id="@+id/relativeLayout1"
+        style="@style/TopBackgroundTitleBarstyle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+        <Button
+            android:id="@+id/tv_titlebar4"
+            style="@style/TopTitleTextViewStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@null"
+            android:text="@string/tv_select_live" />
+
+        <Button
+            android:id="@+id/button1"
+            style="@style/TopTitleBackStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </RelativeLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/relativeLayout1"
+        android:scrollbars="none" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center_horizontal"
+            android:orientation="vertical" >
+
+            <RelativeLayout
+                android:id="@+id/relate2"
+                style="@style/DoliveLayoutStyle"
+                android:layout_width="match_parent"
+                android:layout_height="250dp"
+                android:background="@drawable/live_background2" >
+
+                <TextView
+                    android:id="@+id/doliveTitleTextView1"
+                    style="@style/DoliveTitleTextViewStyle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentTop="true"
+                    android:text="@string/dolive_content" />
+
+                <EditText
+                    android:id="@+id/doLiveContentEditText"
+                    style="@style/DoliveInfoTextViewStyle"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/tab2_livesite_review_margin"
+                    android:layout_toRightOf="@id/doliveTitleTextView1"
+                    android:background="@null"
+                    android:gravity="top"
+                    android:inputType="textMultiLine"
+                    android:lines="7"
+                    android:singleLine="false" />
+
+                <RelativeLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="90dp"
+                    android:layout_below="@+id/doLiveContentEditText"
+                    
+                    android:layout_marginTop="6dp"
+                    android:contentDescription="@null"
+                    android:orientation="horizontal" >
+                    <ImageView
+                        android:id="@+id/doLiveImageButton4"
+                        style="@style/DoliveImageButtonStyle"
+                        android:layout_alignParentRight="true"
+                        android:layout_marginLeft="3dp"
+                        android:scaleType="fitXY"
+                        android:src="@drawable/btn015_2_btn_selector" />
+                    
+                    <ImageView
+                        android:id="@+id/doLiveImageButton3"
+                        style="@style/DoliveImageButtonStyle"
+                        android:layout_marginLeft="3dp"
+                        android:layout_toLeftOf="@+id/doLiveImageButton4"
+                        android:scaleType="fitXY"
+                        android:src="@drawable/btn015_2_btn_selector" />
+                    <ImageView
+                        android:id="@+id/doLiveImageButton2"
+                        style="@style/DoliveImageButtonStyle"
+                        android:layout_marginLeft="3dp"
+                        android:scaleType="fitXY"
+                        android:layout_toLeftOf="@+id/doLiveImageButton3"
+                        android:contentDescription="@null"
+                        android:src="@drawable/btn015_2_btn_selector" />
+
+                    <ImageView
+                        android:id="@+id/doLiveImageButton1"
+                        style="@style/DoliveImageButtonStyle"
+                        android:layout_marginLeft="3dp"
+                        android:scaleType="fitXY"
+                        android:layout_toLeftOf="@+id/doLiveImageButton2"
+                        android:contentDescription="@null"
+                        android:src="@drawable/btn015_2_btn_selector" />
+                    
+
+                    
+                    
+                    
+	
+                    
+                </RelativeLayout>
+            </RelativeLayout>
+
+            <Button
+                android:id="@+id/doliveButton"
+                style="@style/DoliveButtonStyle"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10.5dp"
+                android:layout_marginRight="10.5dp"
+                android:layout_marginTop="50dp"
+                android:text="@string/dolive" />
+        </LinearLayout>
+    </ScrollView>
+
+
+
+</RelativeLayout>

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string-array name="tab3_array">
+        <item>全部</item>
+        <item>保健行业</item>
+        <item>学院类</item>
+        <item>电商协会</item>
+        <item>会员企业</item>
+    </string-array>
+
+</resources>

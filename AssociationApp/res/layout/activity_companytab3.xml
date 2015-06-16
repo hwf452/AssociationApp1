@@ -1,0 +1,356 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/AllBackgroundstyle"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <RelativeLayout
+        android:id="@+id/topTitleLayout"
+        style="@style/TopBackgroundTitleBarstyle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+        <Button
+            android:id="@+id/button1"
+            style="@style/TopTitleBackStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            style="@style/TopTitleTextViewStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/tv_tab4_member" />
+    </RelativeLayout>
+
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_below="@+id/topTitleLayout"
+        android:scrollbars="none" >
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content" >
+
+            <RelativeLayout
+                android:id="@+id/relate1"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:background="#dbdbdb"
+                android:paddingBottom="10.5dp" >
+
+                <RelativeLayout
+                    android:id="@+id/relate2"
+                    android:layout_width="fill_parent"
+                    android:layout_height="98dp"
+                    android:background="#dbdbdb"
+                    android:minHeight="98dp" >
+
+                    <TextView
+                        android:id="@+id/tv_listtitle"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/zimu_daohang"
+                        android:paddingLeft="10.0dip"
+                        android:textColor="#ffffffff"
+                        android:visibility="gone" />
+
+                    <FrameLayout
+                        android:id="@+id/imageView"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentLeft="true"
+                        android:layout_below="@+id/tv_listtitle"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="10.5dp" >
+
+                        <ImageView
+                            android:id="@+id/head_icon"
+                            android:layout_width="76.5dp"
+                            android:layout_height="76dp"
+                            android:layout_gravity="center_vertical"
+                            android:layout_margin="2.0dip"
+                            android:paddingLeft="3.0dip"
+                            android:src="@drawable/portrait7" />
+
+                        <ImageView
+                            android:id="@+id/list_item_head_image"
+                            android:layout_width="76.5dp"
+                            android:layout_height="76dp"
+                            android:layout_gravity="center_vertical"
+                            android:layout_margin="2.0dip"
+                            android:layout_marginLeft="10.5dp"
+                            android:layout_toRightOf="@id/imageView"
+                            android:singleLine="true"
+                            android:src="@drawable/portrait10" />
+                    </FrameLayout>
+
+                    <TextView
+                        android:id="@+id/user_name"
+                        style="@style/Tab3_item_tv_style"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="10.5dp"
+                        android:layout_toRightOf="@id/imageView"
+                        android:singleLine="true"
+                        android:text="吉林大学珠海校区"
+                        android:textSize="16sp" />
+
+                    <RelativeLayout
+                        android:id="@+id/frame2"
+                        android:layout_width="30dip"
+                        android:layout_height="match_parent"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:paddingLeft="5.0dip" >
+
+                        <TextView
+                            android:id="@+id/relativeLayout1"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerInParent="true"
+                            android:visibility="gone"
+                            android:background="@drawable/btn03_btn_selector" />
+                    </RelativeLayout>
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/relate3"
+                    style="@style/tab3_rv_rl_style"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/relate2"
+                    android:background="@drawable/list6" >
+
+                    <ImageView
+                        android:id="@+id/imageView1"
+                        style="@style/tab3_rv_ivLeft_style"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/button_phone" />
+
+                    <ImageView
+                        android:id="@+id/imageView2"
+                        style="@style/tab3_rv_ivright_style"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/btn17_btn_selector" />
+
+                    <TextView
+                        android:id="@+id/textView2"
+                        style="@style/tab3_tv_tv1_style"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_toLeftOf="@+id/imageView2"
+                        android:layout_toRightOf="@+id/imageView1"
+                        android:text="0756-3432245" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/relate4"
+                    style="@style/tab3_rv_rl_style"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/relate3"
+                    android:background="@drawable/list7" >
+
+                    <ImageView
+                        android:id="@+id/imageView3"
+                        style="@style/tab3_rv_ivLeft_style"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/button_address" />
+
+                    <ImageView
+                        android:id="@+id/imageView5"
+                        style="@style/tab3_rv_ivright_style"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/btn18_btn_selector" />
+
+                    <TextView
+                        android:id="@+id/textView3"
+                        style="@style/tab3_tv_tv1_style"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_toLeftOf="@+id/imageView5"
+                        android:layout_toRightOf="@+id/imageView3"
+                        android:text="广东省珠海市金湾区草堂湾" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/relate5"
+                    style="@style/tab3_rv_rl_style"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/relate4"
+                    android:background="@drawable/list7" >
+
+                    <ImageView
+                        android:id="@+id/imageView3"
+                        style="@style/tab3_rv_ivLeft_style"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/weixin_icon1" />
+
+                    <TextView
+                        android:id="@+id/textView3"
+                        style="@style/tab3_tv_tv1_style"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        
+                        android:layout_toRightOf="@+id/imageView3"
+                        android:text="微信公号" />
+
+                    <TextView
+                        android:id="@+id/textView1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        style="@style/tab3_tv_tv1_style"
+                        android:layout_marginLeft="15dp"
+                        android:layout_toRightOf="@+id/textView3"
+                        android:text="WX82333223" />
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/relate6"
+                    style="@style/tab3_rv_rl_style"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/relate5"
+                    android:background="@drawable/list7" >
+
+                    <ImageView
+                        android:id="@+id/imageView3"
+                        style="@style/tab3_rv_ivLeft_style"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/weibo_icon" />
+
+                    <ImageView
+                        android:id="@+id/imageView5"
+                        style="@style/tab3_rv_ivright_style"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/btn19_btn_selector" />
+
+                    <TextView
+                        android:id="@+id/textView3"
+                        style="@style/tab3_tv_tv1_style"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_toLeftOf="@+id/imageView5"
+                        android:layout_toRightOf="@+id/imageView3"
+                        android:text="企业微博" />
+                </RelativeLayout>
+                <RelativeLayout
+                    android:id="@+id/relate7"
+                    style="@style/tab3_rv_rl_style"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/relate6"
+                    android:background="@drawable/list7" >
+
+                    <ImageView
+                        android:id="@+id/imageView3"
+                        style="@style/tab3_rv_ivLeft_style"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/pepole_head_icon" />
+
+                    <ImageView
+                        android:id="@+id/imageView5"
+                        style="@style/tab3_rv_ivright_style"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/btn19_btn_selector" />
+
+                    <TextView
+                        android:id="@+id/textView3"
+                        style="@style/tab3_tv_tv1_style"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_toLeftOf="@+id/imageView5"
+                        android:layout_toRightOf="@+id/imageView3"
+                        android:text="负责人" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/web"
+                    style="@style/tab3_rv_rl_style"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/relate7"
+                    android:background="@drawable/list8_tab3" >
+
+                    <ImageView
+                        android:id="@+id/imageView4"
+                        style="@style/tab3_rv_ivLeft_style"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/www_icon" />
+
+                    <ImageView
+                        android:id="@+id/imageView6"
+                        style="@style/tab3_rv_ivright_style"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/btn19_btn_selector" />
+
+                    <TextView
+                        android:id="@+id/textView4"
+                        style="@style/tab3_tv_tv1_style"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_toLeftOf="@+id/imageView6"
+                        android:layout_toRightOf="@+id/imageView4"
+                        android:text="网址" />
+                </RelativeLayout>
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/relate6"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/relate1"
+                android:background="@drawable/box03"
+                android:gravity="center" >
+
+                <RelativeLayout
+                    android:id="@+id/relate7"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="24.66dp"
+                    android:layout_marginRight="24.66dp"
+                    android:background="@drawable/button07_3" >
+
+                    <TextView
+                        android:id="@+id/textView6"
+                        style="@style/tab3_tv_tv1_style"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerHorizontal="true"
+                        android:layout_centerVertical="true"
+                        android:textStyle="bold"
+                        android:text="会员简介" />
+                </RelativeLayout>
+            </RelativeLayout>
+
+            <TextView
+                android:id="@+id/textView5"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/relate6"
+                android:layout_marginLeft="10.5dp"
+                android:layout_marginRight="10.5dp"
+                android:layout_marginTop="15dp"
+                android:text="@string/tv_tab3_detail"
+                android:textColor="#000000"
+                android:textSize="12.5sp" />
+        </RelativeLayout>
+    </ScrollView>
+
+</RelativeLayout>

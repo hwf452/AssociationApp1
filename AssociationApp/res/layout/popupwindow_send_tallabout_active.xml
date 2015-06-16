@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/RelateActive"
+    android:layout_width="100dp"
+    android:layout_height="44.5dp"
+    android:background="#ffffff"
+    android:orientation="horizontal" >
+
+   
+
+        <Button
+            android:id="@+id/send"
+            
+            android:layout_width="100dp"
+            android:layout_height="match_parent"
+            
+            android:text="发帖"
+            android:textColor="#ffffff"
+            android:gravity="center"
+            
+    		android:background="@drawable/btn_menu_send_selector"
+            
+             />
+
+        
+
+</LinearLayout>

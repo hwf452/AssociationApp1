@@ -1,0 +1,212 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/AllBackgroundstyle"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <RelativeLayout
+        android:id="@+id/relativeLayout1"
+        style="@style/TopBackgroundTitleBarstyle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+        <TextView
+            android:id="@+id/tv_titlebar4"
+            style="@style/TopTitleTextViewStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/tvTitleBar4" />
+
+        <Button
+            android:id="@+id/back"
+            style="@style/TopTitleBackStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:visibility="gone" />
+    </RelativeLayout>
+
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_below="@+id/relativeLayout1"
+        android:fadingEdge="none"
+        android:fillViewport="true"
+        android:scrollbars="none" >
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content" >
+
+            <ImageView
+                android:id="@+id/icon_dl"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="30dp"
+                android:contentDescription="@null"
+                android:src="@drawable/icon_dl" />
+
+            <LinearLayout
+                android:id="@+id/member_login_layout"
+                style="@style/lv_linear1style"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/icon_dl"
+                android:focusable="true"
+                android:focusableInTouchMode="true" >
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="10.0dip" >
+
+                    <TextView
+                        style="@style/tv_tab4_tv"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/username" />
+
+                    <EditText
+                        android:id="@+id/username"
+                        style="@style/tab4_et_style"
+                        android:layout_width="0.0dip"
+                        android:layout_height="wrap_content"
+                        android:hint="@string/tab4_btn_login_hint" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="10.0dip" >
+
+                    <TextView
+                        style="@style/tv_tab4_tv"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/password" />
+
+                    <EditText
+                        android:id="@+id/password"
+                        style="@style/tab4_et_style"
+                        android:layout_width="0.0dip"
+                        android:layout_height="wrap_content"
+                        android:hint="@string/tab4_btn_login_hint_pwd"
+                        android:inputType="textPassword" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <RelativeLayout
+                android:id="@+id/relativeLayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/member_login_layout" >
+
+                <TextView
+                    android:id="@+id/messageTextView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="20.0dp"
+                    android:text="你输入的账号或密码有误，请重新输入。"
+                    android:textColor="@color/red"
+                    android:textSize="12sp" />
+
+                <CheckBox
+                    android:id="@+id/rememberCheckBox"
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:layout_centerVertical="true"
+                    android:layout_toLeftOf="@+id/textView"
+                    android:background="@drawable/btn152_btn_selector"
+                    android:button="@null" />
+
+                <TextView
+                    android:id="@+id/textView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="10dp"
+                    android:text="记住密码"
+                    android:textColor="@color/gray"
+                    android:textSize="12sp" />
+            </RelativeLayout>
+
+            <Button
+                android:id="@+id/loginBtn"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/relativeLayout"
+                android:layout_margin="10.0dip"
+                android:background="@drawable/btn22_btn_selector"
+                android:gravity="center"
+                android:text="@string/tab4_btn_login"
+                android:textColor="@color/white"
+                android:textSize="@dimen/member_button_text" />
+
+            <Button
+                android:id="@+id/show"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/loginBtn"
+                android:layout_margin="10.0dip"
+                android:background="@drawable/btn23_btn_selector"
+                android:gravity="center"
+                android:text="@string/fast_get_count"
+                android:textColor="@color/light_black"
+                android:textSize="@dimen/member_button_text" />
+
+            <Button
+                android:id="@+id/aboutButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_below="@id/show"
+                android:layout_marginRight="10dp"
+                android:background="@drawable/btn151_btn_selector" />
+
+            <TextView
+                android:id="@+id/status_show"
+                android:layout_width="fill_parent"
+                android:layout_height="20.0dip"
+                android:layout_below="@+id/aboutButton" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="20dp"
+                android:layout_alignParentBottom="true"
+                android:layout_centerHorizontal="true"
+                android:layout_marginBottom="10dp"
+                android:gravity="center_vertical"
+                android:orientation="horizontal" >
+
+                <Button
+                    android:id="@+id/registerButton"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@null"
+                    android:onClick="toRegist"
+                    android:text="我要注册"
+                    android:textSize="12sp"
+                    android:textColor="#4889db" />
+
+                <ImageView
+                    android:layout_width="10dp"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/button_background_favorites1" />
+
+                <Button
+                    android:id="@+id/forgetButton"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@null"
+                    android:text="忘记密码"
+                    android:onClick="toRegist"
+                    android:textSize="12sp"
+                    android:textColor="#4889db" />
+            </LinearLayout>
+        </RelativeLayout>
+    </ScrollView>
+
+</RelativeLayout>

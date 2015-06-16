@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/list9" >
+
+    <TextView
+        android:id="@+id/tv_listtitle"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/zimu_daohang"
+        android:paddingLeft="10.0dip"
+        android:textColor="#ffffffff"
+        android:visibility="gone"
+        />
+
+    <FrameLayout
+        android:id="@+id/imageView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_marginLeft="9dp"
+        android:layout_marginRight="9dp"
+        android:layout_below="@+id/tv_listtitle"
+        android:layout_centerVertical="true" >
+
+        
+
+        <ImageView
+            android:id="@+id/list_item_head_image"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_margin="2.0dip"
+            
+            android:src="@drawable/button23_tab4" />
+    </FrameLayout>
+
+    <TextView
+        android:id="@+id/user_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@id/imageView"
+        android:layout_marginLeft="2.0dip"
+        android:layout_marginRight="5.0dip"
+        android:layout_marginTop="10.0dip"
+        android:layout_toRightOf="@id/imageView"
+        android:singleLine="true"
+        android:text="产品名称"
+        android:textColor="#454545"
+        android:textSize="16sp" />
+
+    
+
+    <TextView
+        android:id="@+id/user_company"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@id/user_name"
+        android:layout_alignWithParentIfMissing="true"
+        android:layout_below="@id/user_name"
+        android:paddingBottom="8.0dip"
+        android:paddingTop="1.6999817dip"
+        android:singleLine="true"
+        
+        android:text="产品信息。。。。。"
+        android:textColor="#565656"
+        android:textSize="14sp" />
+
+   
+
+</RelativeLayout>

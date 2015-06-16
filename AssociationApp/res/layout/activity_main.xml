@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TabHost xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@android:id/tabhost"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+        
+
+        <TabWidget
+            android:id="@android:id/tabs"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:visibility="gone" >
+        </TabWidget>
+	<RelativeLayout
+	    android:id="@+id/relate1"
+        android:layout_width="match_parent"
+        android:layout_alignParentBottom="true"
+        android:background="@drawable/tablebar_background"
+        android:layout_height="50.5dp" >
+        <RadioGroup
+            android:id="@+id/radioGroup1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            
+            
+            
+            android:orientation="horizontal" >
+
+            <RadioButton
+                android:id="@+id/radio0"
+                style="@style/rb_style"
+                android:checked="true"
+                
+                android:drawableTop="@drawable/home_rb1_selector"
+                android:text="@string/tab1" />
+
+            <RadioButton
+                android:id="@+id/radio1"
+                style="@style/rb_style"
+                android:paddingTop="9dp"
+                android:drawableTop="@drawable/home_rb2_selector"
+                android:text="@string/tab2" />
+
+            <Button
+                android:id="@+id/More"
+                style="@style/rb_style_more"
+                
+                android:background="@drawable/home_rb3_selector"
+                 />
+
+            <RadioButton
+                android:id="@+id/radio3"
+                style="@style/rb_style"
+                android:drawableTop="@drawable/home_rb4_selector"
+                android:text="@string/tab4" />
+            <RadioButton
+                android:id="@+id/radio4"
+                style="@style/rb_style"
+                android:drawableTop="@drawable/home_rb5_selector"
+                android:text="@string/tab5" />
+
+            
+        </RadioGroup>
+        </RelativeLayout>
+
+        <FrameLayout
+            android:id="@android:id/tabcontent"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_above="@+id/relate1" >
+
+            <fragment
+                android:id="@+id/fragment1"
+                android:name="com.halong.associationapp.Tab1Fragment"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
+
+            <fragment
+                android:id="@+id/fragment2"
+                android:name="com.halong.associationapp.Tab2Fragment"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
+
+            
+
+            <fragment
+                android:id="@+id/fragment4"
+                android:name="com.halong.associationapp.Tab4Fragment"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
+            <fragment
+                android:id="@+id/fragment5"
+                android:name="com.halong.associationapp.Tab5Fragment"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
+
+            
+        </FrameLayout>
+    </RelativeLayout>
+
+</TabHost>

@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/info_detail_layout"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/white" >
+
+    <RelativeLayout
+        android:id="@+id/info_detail_topbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        
+        style="@style/TopBackgroundTitleBarstyle">
+
+        <Button
+            android:id="@+id/button1"
+            style="@style/TopTitleBackStyle"
+            
+            
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        
+        <TextView
+            android:id="@+id/textView1"
+            style="@style/TopTitleTextViewStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:text="@string/info_detail" />
+        <Button
+            android:id="@+id/more"
+            style="@style/TopTitleButton7Style"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/btn006_btn_selector"
+             />
+        
+        
+
+     
+    </RelativeLayout>
+
+    
+
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        
+        android:layout_below="@id/info_detail_topbar"
+        android:fadingEdge="none" >
+
+        <LinearLayout
+            android:id="@+id/info_detail_linearlayout"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:orientation="vertical"
+            android:paddingLeft="10.5dip"
+            android:paddingRight="10.5dip" >
+
+            <TextView
+                android:id="@+id/info_detail_title"
+                style="@style/info_title"
+                android:gravity="center"
+                android:text="标题" />
+
+            <TextView
+                android:id="@+id/info_detail_comefrom"
+                style="@style/info_come_from"
+                android:gravity="center"
+                android:text="时间     来源：云来网络" />
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="1.0dip"
+                android:background="@color/list_item_devide"
+                android:paddingLeft="10.0dip" />
+
+            
+            <RelativeLayout
+                android:id="@+id/info_detail_imageview"
+                android:layout_width="match_parent"
+                android:layout_height="180dp"
+                android:layout_gravity="center"
+                android:layout_marginLeft="10.5dip"
+            	android:layout_marginRight="10.5dip"
+                android:layout_marginBottom="10.0dip"
+                android:layout_marginTop="10.0dip"
+                android:background="@drawable/detail_default_pic"
+                />
+
+            <TextView
+                android:id="@+id/info_detail_content"
+                style="@style/info_content"
+                android:text="详细内容" />
+        </LinearLayout>
+    </ScrollView>
+
+</RelativeLayout>

@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="75dp"
+    android:descendantFocusability="blocksDescendants"
+    android:background="@drawable/list_item_selector"
+    android:minHeight="70dp"
+    android:padding="10dp" >
+
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="7dp"
+        android:text="@string/dolive_site_name"
+        android:textColor="@color/black"
+        android:textSize="20sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/textView2"
+        style="@style/DoliveLittleTextViewStyle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@id/textView1"
+        android:layout_below="@id/textView1"
+        android:layout_marginTop="5dp"
+        android:drawableLeft="@drawable/icon_time"
+        android:drawablePadding="5dp"
+        android:gravity="center_vertical"
+        android:text="@string/dolive_date" />
+
+    <ImageView
+        android:id="@+id/imageView1"
+        android:layout_width="40dp"
+        android:layout_height="35dp"
+        android:focusable="false"
+        android:layout_alignParentRight="true"
+        android:src="@drawable/btn016_btn_selector" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@id/imageView1"
+        android:layout_alignRight="@id/imageView1"
+        android:layout_below="@id/imageView1"
+        android:layout_marginTop="2dp"
+        
+        android:gravity="center_horizontal"
+        android:text="@string/choice"
+        android:textColor="@drawable/tv3_rb_item_selector"
+        android:textSize="12sp" />
+
+</RelativeLayout>

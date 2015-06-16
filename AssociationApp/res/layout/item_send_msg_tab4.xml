@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    
+    android:background="#f3f3f3"
+    >
+
+    <TextView
+        android:id="@+id/timeShow"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:paddingTop="15dp"
+        android:paddingBottom="15dp"
+        android:text="2014-1-20 19:33"
+        android:textColor="#121212"
+         />
+
+    
+
+
+    <RelativeLayout
+        android:id="@+id/relate2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10.5dp"
+        android:layout_below="@+id/timeShow"
+        >
+        <ImageView
+            android:id="@+id/image1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_margin="2.0dip"
+            
+            android:src="@drawable/head2" />
+
+        <TextView
+            android:id="@+id/msg"
+            style="@style/Tab3_item_tv_style"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/image1"
+            android:gravity="center_vertical"
+            android:layout_marginLeft="3dp"
+            android:layout_marginRight="30dp"
+            android:paddingLeft="15dp"
+            android:paddingTop="15dp"
+            android:paddingBottom="12dp"
+            android:background="@drawable/receive_msg"
+            android:text="你好，今天下午不空吗？今天是情人节，下午我想到你那边去，顺便给您送个一枝玫瑰花。"
+            android:textSize="15sp" />
+    </RelativeLayout>
+
+</RelativeLayout>

@@ -1,0 +1,440 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/AllBackgroundstyle"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <RelativeLayout
+        android:id="@+id/topTitleLayout"
+        style="@style/TopBackgroundTitleBarstyle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+        <Button
+            android:id="@+id/button1"
+            style="@style/TopTitleBackStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <Button
+            android:id="@+id/more"
+            style="@style/TopTitleButton7Style"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="1dp"
+            android:background="@drawable/btn006_btn_selector" />
+
+        <TextView
+            style="@style/TopTitleTextViewStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/tv_activeDetail_tab3" />
+    </RelativeLayout>
+
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_below="@+id/topTitleLayout"
+        android:scrollbars="none" >
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content" >
+
+            <RelativeLayout
+                android:id="@+id/relate1"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:background="#dbdbdb"
+                android:paddingBottom="10.5dp" >
+
+                <RelativeLayout
+                    android:id="@+id/relate2"
+                    android:layout_width="fill_parent"
+                    android:layout_height="98dp"
+                    android:background="#dbdbdb"
+                    android:minHeight="98dp" >
+
+                    <TextView
+                        android:id="@+id/tv_listtitle"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/zimu_daohang"
+                        android:paddingLeft="10.0dip"
+                        android:textColor="#ffffffff"
+                        android:visibility="gone" />
+
+                    <FrameLayout
+                        android:id="@+id/imageView"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentLeft="true"
+                        android:layout_below="@+id/tv_listtitle"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="10.5dp" >
+
+                        <ImageView
+                            android:id="@+id/head_icon"
+                            android:layout_width="76.5dp"
+                            android:layout_height="76dp"
+                            android:layout_gravity="center_vertical"
+                            android:layout_margin="2.0dip"
+                            android:paddingLeft="3.0dip"
+                            android:src="@drawable/portrait7" />
+
+                        <ImageView
+                            android:id="@+id/list_item_head_image"
+                            android:layout_width="76.5dp"
+                            android:layout_height="76dp"
+                            android:layout_gravity="center_vertical"
+                            android:layout_margin="2.0dip"
+                            android:layout_marginLeft="10.5dp"
+                            android:layout_toRightOf="@id/imageView"
+                            android:singleLine="true"
+                            android:src="@drawable/portrait10_2" />
+                    </FrameLayout>
+
+                    <RelativeLayout
+                        android:id="@+id/frame2"
+                        android:layout_width="30dip"
+                        android:layout_height="match_parent"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:paddingLeft="5.0dip" >
+
+                        <TextView
+                            android:id="@+id/relativeLayout1"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerInParent="true"
+                            android:background="@drawable/btn03_btn_selector"
+                            android:visibility="gone" />
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="9dp"
+                        android:layout_toLeftOf="@+id/frame2"
+                        android:layout_toRightOf="@+id/imageView" >
+
+                        <TextView
+                            android:id="@+id/user_name"
+                            style="@style/Tab3_item_tv_style"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignLeft="@+id/user_company"
+                            android:layout_alignParentTop="true"
+                            android:layout_marginTop="20dp"
+                            android:singleLine="true"
+                            android:text="珠海关爱协会"
+                            android:textSize="16sp" />
+
+                        <TextView
+                            android:id="@+id/textView1"
+                            style="@style/Tab3_item_tv_style"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignLeft="@+id/user_company"
+                            android:layout_below="@+id/user_name"
+                            android:layout_marginTop="12dp"
+                            android:text="620人已报名"
+                            android:textSize="12sp" />
+                    </RelativeLayout>
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/relate3"
+                    style="@style/tab3_rv_rl_style"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/relate2"
+                    android:background="@drawable/list6" >
+
+                    <TextView
+                        android:id="@+id/textViewAc"
+                        style="@style/tab3_rv_ivLeft_style_totv"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="活动名称" />
+
+                    <TextView
+                        android:id="@+id/textView_ri"
+                        style="@style/tab3_rv_ivLeft_style_totv"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_toRightOf="@+id/textViewAc"
+                        android:singleLine="true"
+                        android:text="关于异地务工人员志愿服务活动" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/relate4"
+                    style="@style/tab3_rv_rl_style"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/relate3"
+                    android:background="@drawable/list7" >
+
+                    <TextView
+                        android:id="@+id/textView3"
+                        style="@style/tab3_rv_ivLeft_style_totv"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="联系电话:" />
+
+                    <ImageView
+                        android:id="@+id/imageView1"
+                        style="@style/tab3_rv_ivright_style"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:src="@drawable/btn17_btn_selector" />
+
+                    <TextView
+                        android:id="@+id/textView4"
+                        style="@style/tab3_rv_ivLeft_style_totv1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10.5dp"
+                        android:layout_toLeftOf="@id/imageView1"
+                        android:layout_toRightOf="@+id/textView3"
+                        android:text="18680178300" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/relate5"
+                    style="@style/tab3_rv_rl_style"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/relate4"
+                    android:background="@drawable/list7" >
+
+                    <TextView
+                        android:id="@+id/textView5"
+                        style="@style/tab3_rv_ivLeft_style_totv"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="集合地址:" />
+
+                    <ImageView
+                        android:id="@+id/imageView2"
+                        style="@style/tab3_rv_ivright_style"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:src="@drawable/btn18_btn_selector" />
+
+                    <TextView
+                        android:id="@+id/textView6"
+                        style="@style/tab3_rv_ivLeft_style_totv1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10.5dp"
+                        android:layout_toLeftOf="@id/imageView2"
+                        android:layout_toRightOf="@+id/textView5"
+                        android:singleLine="true"
+                        android:text="广东省珠海市香洲区健民路147号" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/relate6"
+                    style="@style/tab3_rv_rl_style"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/relate5"
+                    android:background="@drawable/list7" >
+
+                    <TextView
+                        android:id="@+id/textView7"
+                        style="@style/tab3_rv_ivLeft_style_totv"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="集合时间:" />
+
+                    <TextView
+                        android:id="@+id/textView8"
+                        style="@style/tab3_rv_ivLeft_style_totv"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_toRightOf="@+id/textView7"
+                        android:singleLine="true"
+                        android:text="2014年3月16日  上午7:45——8:00" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/relate7"
+                    style="@style/tab3_rv_rl_style"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/relate6"
+                    android:background="@drawable/list7" >
+
+                    <TextView
+                        android:id="@+id/textView9"
+                        style="@style/tab3_rv_ivLeft_style_totv"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="截止时间:" />
+
+                    <TextView
+                        android:id="@+id/textView_time"
+                        style="@style/tab3_rv_ivLeft_style_totv"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_toRightOf="@+id/textView9"
+                        android:text="2014年3月15号  18：00" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/relate8"
+                    style="@style/tab3_rv_rl_style"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/relate7"
+                    android:background="@drawable/list7" >
+
+                    <TextView
+                        android:id="@+id/textView10"
+                        style="@style/tab3_rv_ivLeft_style_totv"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="活动时间:" />
+
+                    <TextView
+                        android:id="@+id/textView11"
+                        style="@style/tab3_rv_ivLeft_style_totv"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_toRightOf="@+id/textView10"
+                        android:singleLine="true"
+                        android:text="2014年3月16日8:00——18:00" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/relate9"
+                    style="@style/tab3_rv_rl_style"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/relate8"
+                    android:background="@drawable/list7" >
+
+                    <TextView
+                        android:id="@+id/textView12"
+                        style="@style/tab3_rv_ivLeft_style_totv"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="活动地点:" />
+
+                    <ImageView
+                        android:id="@+id/imageView3"
+                        style="@style/tab3_rv_ivright_style"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:src="@drawable/btn18_btn_selector" />
+
+                    <TextView
+                        android:id="@+id/textView13"
+                        style="@style/tab3_rv_ivLeft_style_totv1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_toLeftOf="@id/imageView3"
+                        android:layout_toRightOf="@+id/textView12"
+                        android:singleLine="true"
+                        android:text="广东省珠海市体育中心" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/web"
+                    style="@style/tab3_rv_rl_style"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/relate9"
+                    android:background="@drawable/list8_tab3" >
+
+                    <TextView
+                        android:id="@+id/textView14"
+                        style="@style/tab3_rv_ivLeft_style_totv"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="活动简介" />
+                    <ImageView
+                        android:id="@+id/imageView4"
+                        style="@style/tab3_rv_ivright_style"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:src="@drawable/btn0191_btn_selector" />
+
+                    <TextView
+                        android:id="@+id/textView15"
+                        style="@style/tab3_rv_ivLeft_style_totv1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_toLeftOf="@+id/imageView4"
+                        android:layout_toRightOf="@+id/textView14"
+                        android:singleLine="true"
+                        android:text="丰富异地务工清年业余生活，为建设珠海美好家园提供自己的一份力量." />
+                    
+                </RelativeLayout>
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/relate16"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/relate1"
+                android:visibility="gone"
+                android:background="@drawable/box03"
+                android:gravity="center" >
+
+                <RelativeLayout
+                    android:id="@+id/RelateBottom"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:background="#456ea2" >
+
+                    <Button
+                        android:id="@+id/button19"
+                        style="@style/TopTitleButton7Style3"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true" />
+
+                    <Button
+                        android:id="@+id/button18"
+                        style="@style/TopTitleButton7Style3"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_toLeftOf="@+id/button19"
+                        android:background="@drawable/btn82_1_btn_selector" />
+
+                    <Button
+                        android:id="@+id/button17"
+                        style="@style/TopTitleButton7Style3"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_toLeftOf="@+id/button18"
+                        android:background="@drawable/btn42_2_btn_selector" />
+
+                    <Button
+                        android:id="@+id/button15"
+                        style="@style/TopTitleButton7Style5"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_toLeftOf="@+id/button17" />
+
+                    <Button
+                        android:id="@+id/button14"
+                        style="@style/TopTitleButton7Style5"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_toLeftOf="@+id/button15"
+                        android:background="@drawable/btn96_btn_selector" />
+                </RelativeLayout>
+            </RelativeLayout>
+        </RelativeLayout>
+    </ScrollView>
+
+</RelativeLayout>

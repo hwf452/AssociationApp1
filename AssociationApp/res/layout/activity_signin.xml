@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/AllBackgroundstyle"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent" >
+
+    <RelativeLayout
+        android:id="@+id/info_detail_topbar"
+        style="@style/TopBackgroundTitleBarstyle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+        <Button
+            android:id="@+id/button1"
+            style="@style/TopTitleBackStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:id="@+id/textView1"
+            style="@style/TopTitleTextViewStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:text="@string/find_result_tv" />
+
+        <Button
+            android:id="@+id/more"
+            style="@style/TopTitleButton7Style"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/btn006_btn_selector"
+            android:visibility="gone" />
+    </RelativeLayout>
+
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_below="@+id/info_detail_topbar"
+        
+        android:fadingEdge="none"
+        android:scrollbars="none" >
+
+        <RelativeLayout
+            android:id="@+id/info_detail_imageview"
+            android:layout_width="match_parent"
+            
+            android:layout_height="wrap_content" >
+
+            <RelativeLayout
+                android:id="@+id/relate1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="40dp"
+                android:background="@drawable/canning_background" >
+
+                <TextView
+                    android:id="@+id/resultText"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="66dp"
+                    android:text="关爱异地务工人员志愿服务活动"
+                    android:textColor="#000000"
+                    android:textSize="18sp" />
+
+                <Button
+                    android:id="@+id/button3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/resultText"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="60dp"
+                    android:background="@drawable/btn08_scan_btn_selector"
+                    android:text="@string/tv_enter_active_sign"
+                    android:textColor="#ffffff"
+                    android:textSize="18sp" />
+            </RelativeLayout>
+        </RelativeLayout>
+    </ScrollView>
+
+</RelativeLayout>

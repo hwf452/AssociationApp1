@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/list_item_selector" >
+
+    <RelativeLayout
+        android:id="@+id/relate11"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        
+        >
+
+        <TextView
+            android:id="@+id/tv_listtitle"
+            android:layout_width="63dp"
+            android:layout_height="wrap_content"
+            
+            android:gravity="center"
+            
+            android:textColor="#000000" />
+
+        <TextView
+            android:id="@+id/textViewLine"
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@+id/tv_listtitle"
+            android:background="@drawable/line3" />
+    </RelativeLayout>
+
+    <FrameLayout
+        android:id="@+id/imageView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/relate11"
+        android:layout_centerVertical="true" >
+
+        <ImageView
+            android:id="@+id/head_icon"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_margin="2.0dip"
+            android:paddingLeft="3.0dip"
+            android:src="@drawable/defaulte_head_icon" />
+
+        <ImageView
+            android:id="@+id/list_item_head_image"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_margin="2.0dip"
+            android:src="@drawable/head_icon_shade" />
+    </FrameLayout>
+
+    <TextView
+        android:id="@+id/user_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@id/imageView"
+        android:layout_marginLeft="2.0dip"
+        android:layout_marginRight="5.0dip"
+        android:layout_marginTop="6dip"
+        android:layout_toRightOf="@id/imageView"
+        android:singleLine="true"
+        android:text="姓名"
+        android:textColor="#000000"
+        android:textSize="@dimen/list_title_size" />
+
+    <TextView
+        android:id="@+id/user_post"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@id/user_name"
+        android:layout_alignWithParentIfMissing="true"
+        android:layout_toRightOf="@id/user_name"
+        android:singleLine="true"
+        android:text="总经理"
+        android:textColor="#757575"
+        android:textSize="@dimen/list_content_size" />
+
+    <TextView
+        android:id="@+id/user_company"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@id/user_name"
+        android:layout_alignWithParentIfMissing="true"
+        android:layout_below="@id/user_name"
+        android:paddingBottom="8.0dip"
+        android:paddingTop="1.6999817dip"
+        android:singleLine="true"
+        android:text="小天鹅网络公司"
+        android:textColor="#757575"
+        android:textSize="14sp" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:layout_below="@+id/user_company"
+        android:layout_toRightOf="@+id/imageView"
+        android:background="@drawable/line3" />
+
+    <FrameLayout
+        android:layout_width="wrap_content"
+        android:layout_height="fill_parent"
+        android:layout_alignBottom="@id/imageView"
+        android:layout_alignParentRight="true"
+        android:layout_alignTop="@id/imageView" >
+
+        <TextView
+            android:id="@+id/user_city"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:paddingRight="20dp"
+            android:singleLine="true"
+            android:text="深圳市"
+            android:textColor="#000000"
+            android:textSize="14sp" />
+    </FrameLayout>
+
+</RelativeLayout>

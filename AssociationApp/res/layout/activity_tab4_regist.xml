@@ -1,0 +1,174 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/hot_bg" >
+
+    <RelativeLayout
+        android:id="@+id/relativeLayout1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        style="@style/TopBackgroundTitleBarstyle">
+        <Button
+            android:id="@+id/button1"
+            style="@style/TopTitleBackStyle"
+            
+            
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:id="@+id/textView1"
+            style="@style/TopTitleTextViewStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:text="@string/member_register" />
+       
+    </RelativeLayout>
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_below="@+id/relativeLayout1" >
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content" >
+
+            <LinearLayout
+                android:id="@+id/member_register_layout"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:focusable="true"
+                android:focusableInTouchMode="true"
+                android:layout_marginBottom="10.0dip"
+                android:layout_marginLeft="10.0dip"
+                android:layout_marginRight="10.0dip"
+                android:layout_marginTop="20.0dip"
+                android:background="@drawable/mem_input_bg"
+                android:orientation="vertical"
+                android:paddingLeft="10.0dip"
+                android:paddingRight="10.0dip" >
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="10.0dip" >
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/username"
+                        android:textColor="#ff000000"
+                        android:textSize="20.0dip" />
+
+                    <EditText
+                        android:id="@+id/reg_name"
+                        android:layout_width="0.0dip"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1.0"
+                        android:background="@null"
+                        android:hint="@string/hint_tab4_login_phone" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="10.0dip" >
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/password"
+                        android:textColor="#ff000000"
+                        android:textSize="20.0dip" />
+
+                    <EditText
+                        android:id="@+id/reg_pwd"
+                        android:layout_width="0.0dip"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1.0"
+                        android:background="@null"
+                        android:hint="@string/hint_tab4_login_pwd"
+                        android:inputType="textPassword" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/member_register_btn"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/member_register_layout"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="10.0dip"
+                android:layout_margin="10.0dip"
+                android:layout_marginLeft="10.0dip"
+                android:text="@string/regist_tv_tab4"
+                android:background="@drawable/member_login_btn"
+                android:textColor="#ffffffff"
+                android:textSize="20.0dip" />
+
+            <TextView
+                android:id="@+id/member_register_hint"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/member_register_btn"
+                android:layout_marginTop="16.0dip"
+                android:visibility="gone"
+                android:textColor="#000000"
+                android:gravity="center_horizontal"
+                android:text="@string/other_way_login" />
+
+            <LinearLayout
+                android:id="@+id/member_register_weibo"
+                android:layout_width="fill_parent"
+                android:visibility="gone"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/member_register_hint"
+                android:layout_marginTop="16.0dip" >
+
+                <TextView
+                    android:id="@+id/sina_reg"
+                    android:layout_width="0.0dip"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1.0"
+                    android:drawableTop="@drawable/icon_sina"
+                    android:gravity="center_horizontal"
+                    android:textColor="#000000"
+                    android:text="@string/sina_weibo" />
+
+                <TextView
+                    android:id="@+id/tencent_reg"
+                    android:layout_width="0.0dip"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1.0"
+                    android:drawableTop="@drawable/icon_tecent"
+                    android:gravity="center_horizontal"
+                    android:textColor="#000000"
+                    android:text="@string/tencent_weibo" />
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/go_to_login"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/member_register_weibo"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="15.0dip"
+                android:layout_margin="10.0dip"
+                android:layout_marginLeft="10.0dip"
+                android:visibility="gone"
+                android:background="@drawable/member_login_btn"
+                android:textColor="#ffffffff"
+                android:text="@string/tv_login_tab4"
+                android:textSize="20.0dip" />
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="20.0dip"
+                android:layout_below="@+id/go_to_login" />
+        </RelativeLayout>
+
+    </ScrollView>
+
+    </RelativeLayout>

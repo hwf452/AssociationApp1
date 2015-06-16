@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/list_item_selector"
+    android:orientation="vertical" >
+
+    <TextView
+        style="@style/ActiveLittleTitleTextViewStyle"
+        android:text="@string/active_will_begin" />
+
+    <RelativeLayout style="@style/ActiveHintRelativeLayoutStyle" >
+
+        <TextView
+            android:id="@+id/textView1"
+            style="@style/ActiveHintTextViewStyle1"
+            android:text="@string/active_will_begin_name" />
+
+        <TextView
+            android:id="@+id/willBeginNameTextView"
+            style="@style/ActiveHintTextViewStyle1"
+            android:text="关爱异地务工人员志愿服务于活动" 
+            android:layout_toRightOf="@id/textView1"/>
+    </RelativeLayout>
+    
+    <RelativeLayout style="@style/ActiveHintRelativeLayoutStyle" >
+
+        <TextView
+            android:id="@+id/textView2"
+            style="@style/ActiveHintTextViewStyle1"
+            android:text="@string/active_will_begin_phone" />
+         <Button 
+            style="@style/ActiveHintButton"
+            android:id="@+id/willBeginPhoneButton"
+            android:background="@drawable/btn17_btn_selector"
+            android:layout_alignParentRight="true"/>
+
+        <TextView
+            android:id="@+id/willBeginPhoneTextView"
+            style="@style/ActiveHintTextViewStyle2"
+            android:layout_toRightOf="@id/textView2"
+            android:layout_toLeftOf="@id/willBeginPhoneButton"
+            android:text="15915915911" />
+        
+       
+    </RelativeLayout>
+    
+    <RelativeLayout style="@style/ActiveHintRelativeLayoutStyle" >
+
+        <TextView
+            android:id="@+id/textView3"
+            style="@style/ActiveHintTextViewStyle1"
+            android:text="@string/active_will_begin_address" />
+
+        <TextView
+            android:id="@+id/willBeginAddressTextView"
+            style="@style/ActiveHintTextViewStyle2"
+            android:layout_toRightOf="@id/textView3"
+            android:layout_toLeftOf="@+id/willBeginAddressButton"
+            android:text="广东省珠海市香洲区建民路147号" />
+        
+        <Button 
+            style="@style/ActiveHintButton"
+            android:id="@+id/willBeginAddressButton"
+            android:background="@drawable/btn18_btn_selector"
+            android:layout_alignParentRight="true"/>
+    </RelativeLayout>
+    
+    <RelativeLayout style="@style/ActiveHintRelativeLayoutStyle" >
+
+        <TextView
+            android:id="@+id/textView4"
+            style="@style/ActiveHintTextViewStyle1"
+            android:text="@string/active_will_begin_gather" />
+
+        <TextView
+            android:id="@+id/willBeginGatherTextView"
+            style="@style/ActiveHintTextViewStyle1"
+            android:text="2014年3月1日 上午1:00-2:00" 
+            android:layout_toRightOf="@id/textView4"/>
+    </RelativeLayout>
+    
+    <RelativeLayout style="@style/ActiveHintRelativeLayoutStyle" >
+
+        <TextView
+            android:id="@+id/textView5"
+            style="@style/ActiveHintTextViewStyle1"
+            android:text="@string/active_will_begin_end" />
+
+        <TextView
+            android:id="@+id/willBeginEndTextView"
+            style="@style/ActiveHintTextViewStyle1"
+            android:text="2014年3月1日 上午1:00-2:00" 
+            android:layout_toRightOf="@id/textView5"/>
+    </RelativeLayout>
+
+    
+
+</LinearLayout>

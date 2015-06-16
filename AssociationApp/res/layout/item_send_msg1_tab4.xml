@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    
+    android:background="#f3f3f3"
+    >
+
+    <TextView
+        android:id="@+id/timeShow"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:paddingTop="15dp"
+        android:paddingBottom="15dp"
+        android:text="2014-1-20 19:37"
+        android:textColor="#121212"
+         />
+
+    
+
+
+    <RelativeLayout
+        android:id="@+id/relate2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="10.5dp"
+        android:layout_below="@+id/timeShow"
+        >
+        <ImageView
+            android:id="@+id/image1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_margin="2.0dip"
+            android:layout_alignParentRight="true"
+            
+            android:src="@drawable/head" />
+
+        <TextView
+            android:id="@+id/msg"
+            style="@style/Tab3_item_tv_style"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toLeftOf="@+id/image1"
+            android:gravity="center_vertical"
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="3dp"
+            android:paddingTop="12dp"
+            android:paddingLeft="15dp"
+            android:paddingBottom="9dp"
+            android:background="@drawable/send_msg"
+            android:text="你好，有空呀，很期待您的到来。。。。"
+            android:textSize="15sp" />
+    </RelativeLayout>
+
+</RelativeLayout>

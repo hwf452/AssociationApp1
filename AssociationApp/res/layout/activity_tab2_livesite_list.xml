@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/whitesmoke"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:id="@+id/relativeLayout1"
+        style="@style/TopBackgroundTitleBarstyle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+        <TextView
+            android:id="@+id/tv_titlebar4"
+            style="@style/TopTitleTextViewStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@null"
+            android:text="直播现场" />
+
+        
+
+        <Button
+            android:id="@+id/MenuButton"
+            style="@style/TopTitleButton7StyleLogin"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <Button
+            android:id="@+id/back"
+            style="@style/TopTitleBackStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:visibility="gone" />
+    </RelativeLayout>
+
+    <ListView 
+        android:id="@+id/liveSiteListView"
+        android:layout_width="fill_parent"
+        android:divider="@drawable/line002"
+        android:cacheColorHint="#00000000"
+        android:fadingEdge="none"
+        android:scrollbars="none"
+        android:listSelector="@android:color/transparent"
+        android:layout_height="fill_parent">
+    </ListView>
+
+</LinearLayout>

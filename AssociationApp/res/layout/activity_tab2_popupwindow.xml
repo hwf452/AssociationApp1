@@ -1,0 +1,274 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/Member_root"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content" >
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/card_bg2" >
+
+        <RelativeLayout
+            android:id="@+id/contact_card_top_layout"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="5.0dip"
+            android:paddingLeft="10.5dp"
+            android:background="@drawable/btn_tocompany_item_selector"
+            android:layout_marginLeft="9dp"
+            android:layout_marginRight="9dp"
+            android:paddingRight="20.0dip"
+            android:layout_marginTop="35.0dip"
+            >
+
+            <FrameLayout
+                android:id="@+id/headimg_layout"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" >
+
+                <ImageView
+                    android:id="@+id/contact_card_icon"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:src="@drawable/defaulte_head_icon" />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/head_icon_shade" />
+            </FrameLayout>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_toLeftOf="@+id/contact_card_favo_btn"
+                android:layout_toRightOf="@+id/headimg_layout"
+                android:orientation="vertical" >
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:weightSum="2.0" >
+
+                    <TextView
+                        android:id="@+id/contact_card_name"
+                        android:layout_width="0.0dip"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1.0"
+                        android:layout_marginLeft="10.5dp"
+                        android:textColor="@color/list_text"
+                        android:textSize="18.0sp" />
+
+                    <TextView
+                        android:id="@+id/contact_card_post"
+                        android:layout_width="0.0dip"
+                        android:textColor="#8b8b8b"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1.0" />
+                </LinearLayout>
+                <RelativeLayout 
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/contact_card_company"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingTop="3.0dip"
+                    android:textColor="#4889db"
+                    android:text=""
+                    android:layout_marginLeft="10.5dp"
+                    android:singleLine="true" />
+
+                <TextView
+                    android:id="@+id/contact_card_company1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="1dp"
+                    android:layout_alignLeft="@+id/contact_card_company"
+                    android:layout_alignRight="@+id/contact_card_company"
+                    android:layout_below="@+id/contact_card_company"
+                    android:layout_marginTop="1dp"
+                    android:background="@drawable/line02"
+                    android:singleLine="true" />
+
+                </RelativeLayout>
+            </LinearLayout>
+
+            <ImageView
+                android:id="@id/contact_card_favo_btn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:paddingTop="4.0dip"
+                android:visibility="gone"
+                android:src="@drawable/card_col_btn" />
+        </RelativeLayout>
+
+        <LinearLayout
+            android:id="@+id/contact_card_center_layout"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/contact_card_top_layout"
+            android:layout_marginLeft="15.0dip"
+            android:layout_marginRight="15.0dip"
+            android:orientation="vertical" >
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/item_top_bg"
+                android:gravity="center_vertical" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    style="@style/tab2_tv_onclick_style"
+                    android:text="@string/phone_number" />
+
+                <TextView
+                    android:id="@+id/contact_card_tel"
+                    android:layout_width="0.0dip"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1.0"
+                    android:textColor="#ff000000" />
+
+                <ImageView
+                    android:id="@+id/contact_card_mobile_btn"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingRight="5.0dip"
+                    android:visibility="gone"
+                    android:src="@drawable/card_call_phone" />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/item_center_bg"
+                android:gravity="center_vertical" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                   style="@style/tab2_tv_onclick_style"
+                    android:text="@string/public_phone" />
+
+                <TextView
+                    android:id="@+id/public_phone"
+                    android:layout_width="0.0dip"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1.0"
+                    android:text="0756-3345789"
+                    android:textColor="#ff000000" />
+
+                
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/item_center_bg"
+                android:gravity="center_vertical" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                   style="@style/tab2_tv_onclick_style"
+                    android:text="@string/email_tv_tab2" />
+
+                <TextView
+                    android:id="@+id/contact_card_email"
+                    android:layout_width="0.0dip"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1.0"
+                    android:textColor="#ff000000" />
+
+                <ImageView
+                    android:id="@+id/contact_card_email_icon"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingRight="5.0dip"
+                    android:visibility="gone"
+                    android:src="@drawable/write_email" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/item_center_bg"
+                android:gravity="center_vertical" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    style="@style/tab2_tv_onclick_style"
+                    android:text="@string/weibo_tv_tab2" />
+
+                <TextView
+                    android:id="@+id/contact_card_web"
+                    android:layout_width="0.0dip"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1.0"
+                    android:textColor="#ff000000" />
+
+                <ImageView
+                    android:id="@+id/contact_card_weibo_arrow"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:visibility="gone"
+                    android:paddingRight="5.0dip"
+                    android:src="@drawable/more_forus_arrow" />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/item_bottom_bg"
+                android:gravity="center_vertical" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    style="@style/tab2_tv_onclick_style"
+                    android:text="@string/weixin_tv_contrat" />
+
+                <TextView
+                    android:id="@+id/weixin"
+                    android:layout_width="0.0dip"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1.0"
+                    android:text="34858823"
+                    android:textColor="#ff000000" />
+
+                
+            </LinearLayout>
+
+            
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/contact_card_bottom_layout"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/contact_card_center_layout"
+            android:layout_marginLeft="20.0dip"
+            android:layout_marginRight="20.0dip"
+            android:layout_marginTop="10.0dip"
+            android:background="@drawable/btn_style_one_normal"
+            android:gravity="center"
+            android:text="@string/leave_message"
+            android:textColor="@android:color/white"
+            android:textSize="20.0sp" />
+    </RelativeLayout>
+
+    <ImageView
+        android:id="@+id/contact_card_close"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="backButton"
+       android:layout_gravity="right"
+        android:src="@drawable/btn09_btn05_selector" />
+
+</FrameLayout>

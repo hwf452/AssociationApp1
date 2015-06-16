@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<resources>
+
+    <style name="info_item_title">
+        <item name="android:textSize">16.0sp</item>
+        <item name="android:textColor">@color/info_list_item_title</item>
+    </style>
+
+    <style name="info_item_desc">
+        <item name="android:textSize">13.0sp</item>
+        <item name="android:textColor">@color/info_list_item_desc</item>
+    </style>
+
+    <style name="top_bar_layout">
+        <item name="android:gravity">center_vertical</item>
+        <item name="android:background">@drawable/top_bar</item>
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+
+    
+    
+    <style name="top_bar_text">
+        <item name="android:textSize">20.0sp</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textColor">@color/top_bar_text</item>
+        <item name="android:gravity">center</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+    
+    <style name="detail_btn">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+       
+    <style name="info_title">
+        <item name="android:textSize">20.0sp</item>
+        <item name="android:textColor">@color/info_title</item>
+        <item name="android:paddingTop">5.0dip</item>
+        <item name="android:paddingBottom">5.0dip</item>
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+    
+    <style name="info_come_from">
+        <item name="android:textSize">16.0sp</item>
+        <item name="android:textColor">@color/info_title</item>
+        <item name="android:paddingTop">3.0dip</item>
+        <item name="android:paddingBottom">3.0dip</item>
+        <item name="android:layout_width">fill_parent</item>
+        
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+    
+    <style name="info_content">
+        <item name="android:textSize">16.0sp</item>
+        <item name="android:textColor">@color/info_content</item>
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+
+</resources>

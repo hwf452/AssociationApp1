@@ -1,0 +1,178 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    style="@style/AllBackgroundstyle">
+
+    <RelativeLayout
+        android:id="@+id/relativeLayout1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        style="@style/TopBackgroundTitleBarstyle">
+        <Button
+            android:id="@+id/button1"
+            style="@style/TopTitleBackStyle"
+            
+            
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:id="@+id/textView1"
+            style="@style/TopTitleTextViewStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:text="@string/mysend_post.tv" />
+        <Button
+            android:id="@+id/more"
+            style="@style/TopTitleButton7Style"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:visibility="gone"
+            android:background="@drawable/btn006_btn_selector"
+             />
+
+        
+       
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/relativeLayout2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        
+        
+        android:layout_below="@+id/relativeLayout1"
+        android:background="@drawable/list14_2"
+        >
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:textColor="#434433"
+            android:layout_marginLeft="10.5dp"
+            android:textSize="15sp"
+            android:text="@string/title_sendpost_tv" />
+
+        <EditText
+            android:id="@+id/editText1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="18sp"
+            android:background="@null"
+            android:layout_centerVertical="true"
+            android:textColor="#000000"
+            android:singleLine="true"
+            android:hint="请输入标题"
+            
+            android:layout_marginLeft="15dp"
+            android:layout_toRightOf="@+id/textView2"
+             />
+
+       
+
+    </RelativeLayout>
+    <RelativeLayout
+        android:id="@+id/relativeLayout3"
+        android:layout_width="match_parent"
+        android:layout_height="289dp"
+        
+        
+        android:layout_below="@+id/relativeLayout2"
+        android:background="@drawable/list14_3"
+        >
+
+        <TextView
+            android:id="@+id/textView3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_marginTop="12dp"
+            android:textColor="#434433"
+            android:layout_marginLeft="10.5dp"
+            android:textSize="15sp"
+            android:text="@string/tv_more_content" />
+
+        <EditText
+            android:id="@+id/editText2"
+            android:layout_width="match_parent"
+            android:layout_height="260dp"
+            android:layout_alignParentTop="true"
+            android:layout_marginLeft="18dp"
+            android:layout_toRightOf="@+id/textView3"
+            android:background="@null"
+            android:gravity="top"
+            android:hint="@string/hint_please_input_content"
+            android:layout_marginTop="9dp"
+            android:inputType="textMultiLine"
+            android:textSize="18sp" >
+
+            <requestFocus />
+        </EditText>
+
+    </RelativeLayout>
+    <RelativeLayout
+        android:id="@+id/relativeLayout4"
+        android:layout_width="match_parent"
+        android:layout_height="62.5dp"
+        
+        
+        android:layout_below="@+id/relativeLayout3"
+        android:background="@drawable/list14_4"
+        >
+
+        <TextView
+            android:id="@+id/textView4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:textColor="#434433"
+            android:layout_marginLeft="10.5dp"
+            android:textSize="15sp"
+            android:text="@string/tv_pic_more1" />
+
+        <ImageView
+            android:id="@+id/imageView1"
+            android:layout_width="42dp"
+            android:layout_height="42dp"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="21dp"
+            android:layout_toRightOf="@+id/textView4"
+            android:src="@drawable/pic_upload_more" />
+        <ImageView
+            android:id="@+id/imageView2"
+            android:layout_width="42dp"
+            android:layout_height="42dp"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="21dp"
+            android:layout_toRightOf="@+id/imageView1"
+            android:src="@drawable/pic_upload_more" />
+        <ImageView
+            android:id="@+id/imageView3"
+            android:layout_width="42dp"
+            android:layout_height="42dp"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="21dp"
+            android:layout_toRightOf="@+id/imageView2"
+            android:src="@drawable/pic_upload_more" />
+
+    </RelativeLayout>
+
+    <Button
+        android:id="@+id/button2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/relativeLayout4"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="18dp"
+        android:textColor="@drawable/tv4_btn_tab5_selector"
+        android:background="@drawable/btn55_btn_selector"
+        android:text="@string/tv_send_post2" />
+
+    </RelativeLayout>

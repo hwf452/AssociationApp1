@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="tab2_livesite_widget_margin">15.0dip</dimen>
+    <dimen name="tab2_livesite_review_margin">6.0dip</dimen>
+    <dimen name="tab2_livesite_widget_padding">10.0dip</dimen>
+    <dimen name="tab2_livesite_tv_little_margin">2.0dp</dimen>
+    
+    <dimen name="tab2_livesite_et_padding">6.0dp</dimen>
+    <dimen name="active_little_title_padding">8.0dp</dimen>
+    <dimen name="active_hint_padding">10.0dp</dimen>
+    
+    <dimen name="tab2_livesite_tv_little_size">14.0sp</dimen>
+    <dimen name="active_little_title_tv_size">16sp</dimen>
+    <dimen name="active_hint_info_tv_size">14sp</dimen>
+    <dimen name="active_write_info_tv_size">12sp</dimen>
+    <dimen name="active_click_tv_size">12sp</dimen>
+    
+    <dimen name="active_little_title_tv_height">35dp</dimen>
+</resources>

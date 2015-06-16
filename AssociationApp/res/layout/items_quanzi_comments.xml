@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:maxHeight="150dp"
+    android:orientation="vertical"
+    android:paddingBottom="5dp"
+    android:paddingLeft="10dp"
+    android:paddingRight="10dp"
+    android:paddingTop="10dp" >
+
+    <View
+        android:layout_width="0dp"
+        android:layout_height="0dp" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:background="@drawable/list150"
+        android:gravity="center_vertical"
+        android:paddingBottom="5dp"
+        android:paddingRight="10dp"
+        android:paddingTop="10dp" >
+
+        <TextView
+            android:id="@+id/name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:drawablePadding="2dp"
+            android:drawableTop="@drawable/head151"
+            android:ellipsize="end"
+            android:ems="4"
+            android:padding="2dp"
+            android:singleLine="true"
+            android:text="@string/namezhang"
+            android:textSize="@dimen/quanzi_list_little" />
+
+        <LinearLayout
+            android:id="@+id/content"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@id/name"
+            android:orientation="vertical" >
+
+            <TextView
+                android:id="@+id/comment"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ellipsize="end"
+                android:paddingBottom="3dp"
+                android:text="@string/comment32"
+                android:textColor="@color/black"
+                android:textSize="@dimen/quanzi_list_default" />
+
+            <TextView
+                android:id="@+id/time"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:gravity="right"
+                android:paddingBottom="2dp"
+                android:singleLine="true"
+                android:text="@string/time_now"
+                android:textColor="@color/light_black"
+                android:textSize="@dimen/quanzi_list_little" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/content"
+            android:baselineAligned="true"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:paddingLeft="10dp" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/icon_original"
+                android:padding="2dp"
+                android:text="@string/news"
+                android:textColor="@color/white"
+                android:textSize="@dimen/quanzi_list_little" />
+
+            <TextView
+                android:id="@+id/title"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/list151_3"
+                android:gravity="center_vertical"
+                android:padding="2dp"
+                android:text="@string/shenzhen_love"
+                android:textColor="@color/black"
+                android:textSize="@dimen/quanzi_list_little" />
+        </LinearLayout>
+    </RelativeLayout>
+
+</LinearLayout>
